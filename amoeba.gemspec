@@ -27,6 +27,8 @@ EOF
   # specify any dependencies here; for example:
   s.add_development_dependency 'bundler', '>= 1.6.0'
   s.add_development_dependency 'rspec', '>= 3.0.0'
+  
+  s.add_dependency 'activerecord', '>= 4.2.0'
 
   if RUBY_PLATFORM == 'java'
     s.add_development_dependency 'activerecord-jdbc-adapter', '~> 1.3.2'
@@ -38,6 +40,4 @@ EOF
       s.add_development_dependency 'sqlite3', '>= 1.3', '< 1.4'
     end
   end
-
-  s.add_dependency 'activerecord', '>= 4.2.0'
 end
