@@ -31,10 +31,11 @@ EOF
   if RUBY_PLATFORM == 'java'
     s.add_development_dependency 'activerecord-jdbc-adapter', '~> 1.3.2'
     s.add_development_dependency 'activerecord-jdbcsqlite3-adapter', '~> 1.3.2'
-  elsif RUBY_PLATFORM == '2.5.0'
-    s.add_development_dependency 'sqlite3'
-  else
-    s.add_development_dependency 'sqlite3', '>= 1.3', '< 1.4'
+    if RUBY_VERSION == '2.5.0'
+      s.add_development_dependency 'sqlite3', '~> 1.4'
+    else
+      s.add_development_dependency 'sqlite3', '>= 1.3', '< 1.4'
+    end
   end
 
   s.add_dependency 'activerecord', '>= 4.2.0'
