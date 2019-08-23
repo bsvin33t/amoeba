@@ -4,7 +4,7 @@ Easy cloning of active_record objects including associations and several operati
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d4809ae57ca999fff022/maintainability)](https://codeclimate.com/github/amoeba-rb/amoeba/maintainability)
 [![Gem Version](https://badge.fury.io/rb/amoeba.svg)](http://badge.fury.io/rb/amoeba)
-[![Build Status](https://travis-ci.org/amoeba-rb/amoeba.svg?branch=master)](https://travis-ci.org/amoeba-rb/amoeba)
+[![Build Status](https://travis-ci.org/bsvin33t/amoeba.svg?branch=master)](https://travis-ci.org/bsvin33t/amoeba)
 
 ## What?
 
