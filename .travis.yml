@@ -16,9 +16,11 @@ matrix:
     - rvm: ruby-head
     - rvm: jruby
   include:
-    - rvm: 2.5.0
-    - rvm: ruby-head
-    - rvm: jruby
+  include:
+    - rvm: 
+      - 2.5.0
+      - ruby-head
+      - jruby
       gemfile: gemfiles/activerecord_head.gemfile
 bundler_args: --without local_development
 before_install: gem install bundler -v 1.17.3
