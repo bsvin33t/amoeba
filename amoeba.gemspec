@@ -32,8 +32,7 @@ EOF
     s.add_development_dependency 'activerecord-jdbc-adapter', '~> 1.3.2'
     s.add_development_dependency 'activerecord-jdbcsqlite3-adapter', '~> 1.3.2'
   else
-    puts "the ruby version is #{RUBY_VERSION}"
-    if RUBY_VERSION == '2.5.0'
+    if Gem::Specification.find_by_name('activerecord').version >= Gem::Version.new('5.1.0')
       s.add_development_dependency 'sqlite3', '~> 1.4'
     else
       s.add_development_dependency 'sqlite3', '>= 1.3', '< 1.4'
